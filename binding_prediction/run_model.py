@@ -9,11 +9,12 @@ from itertools import chain
 import numpy as np
 from multiprocessing import freeze_support
 import sys
+import lzma
 
 
 def main(smi_file):
     # Set file paths
-    model = "model.pkl"  # pickled tuple containing trained model, X scaler and y scaler
+    model = "model.xz"  # pickled tuple containing trained model, X scaler and y scaler
 
     with open(smi_file, "r") as f:
         smiles = [s.removesuffix("\n") for s in f.readlines()]
@@ -26,7 +27,7 @@ def main(smi_file):
     ]
 
     # Load model
-    with open(model, "rb") as f:
+    with lzma.open(model, "rb") as f:
         model, X_scaler, y_scaler = pickle.load(f)
 
     parents = [Chem.MolFromSmiles(smi) for smi in smiles]
