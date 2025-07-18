@@ -8,7 +8,7 @@ This is a trained Gradient-Boosting Trees model and accompanying python script f
 
 ```bash
 git clone https://github.com/lanl/binding_prediction.git
-cd dac_ml_prediction/binding_prediction
+cd binding_prediction/binding_prediction
 ```
 
 ### 2. Set up the conda environment
@@ -27,10 +27,12 @@ python run_model.py smiles.txt
 
 This will print a list of binding enthalpies for each SMILES in "smiles.smi" with the following format, one per line:
 
-\<parent SMILES\>,<\child SMILES\>,<\binding enthalpy\>
+\<parent SMILES\>,\<child SMILES\>,\<binding enthalpy\>
 
 If a SMILES has multiple binding sites (as described in the paper) then there will be a line for each unique child.
 
+
+"smiles.txt" is provided as a small test case. Replace with your own text file (one SMILES per line) to run the model on other molecules.
 
 ## License
 
