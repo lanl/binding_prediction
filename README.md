@@ -25,7 +25,7 @@ pip install rdchiral
 python run_model.py smiles.txt
 ```
 
-This will print a list of binding enthalpies for each SMILES in "smiles.smi" with the following format, one per line:
+This will print a list of binding enthalpies for each SMILES in "smiles.txt" with the following format, one per line:
 
 \<parent SMILES\>,\<child SMILES\>,\<binding enthalpy\>
 
