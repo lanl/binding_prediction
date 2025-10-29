@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/1022298469.svg)](https://doi.org/10.5281/zenodo.17478788)
+
+
 # Binding Enthalpy Machine Learning Model
 This is a trained Gradient-Boosting Trees model and accompanying python script from our paper "Design of Amine-Functionalized Materials for Direct Air Capture Using Integrated High-Throughput Calculations and Machine Learning" (https://arxiv.org/abs/2410.13982)
 
