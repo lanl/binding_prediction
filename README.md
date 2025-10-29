@@ -34,6 +34,11 @@ If a SMILES has multiple binding sites (as described in the paper) then there wi
 
 "smiles.txt" is provided as a small test case. Replace with your own text file (one SMILES per line) to run the model on other molecules.
 
+## Data from paper
+"structures.zip" contains the following: B3LYP/6-311+G(d,p) energies, structures in .xyz format, and synthesizability scores for DFT dataset and BPEI model, together with ML predicted energies and synthesizability scores for GDB-17-amine set.
+
+"figure_data.zip" contains the raw data used to generate the figures in the manuscript.
+
 ## License
 
 Approved for open release (O4953).
